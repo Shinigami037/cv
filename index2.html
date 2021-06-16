@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🥭 Personal Site</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="undefined"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section>
+      <img src="/images/stars.png" id="stars" />
+      <img src="/images/moon.png" id="moon" />
+      <h1 id="text">Moon Light</h1>
+      <img src="/images/mountains_behind.png" id="mountains_behind" />
+      <img src="/images/mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec">
+      <h1>Welcome to My Small Portfolio</h1>
+      <p>Myself Manashvee Aka as Shinigami or Mango 😅</p>
+      <p>
+        <span></span>
+        <span></span>
+        <span></span>
+      </p>
+      <h1>About Me</h1>
+      <p>
+        So Basically I am a Developer and a Programer who programs for
+        Competative Programing and as well as for Development and Also A Gamer.
+      </p>
+      <h1>So What Are My Skills</h1>
+      <p>They Are Nothing 🥺</p>
+      <h1>But I have knowledge in</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Kotlin</li>
+        <li>C#</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>MySql</li>
+      </ul>
+      <h1>So Now it Comes That what things i Developed and Programed</h1>
+      <ul>
+        <li>
+          So First thing First I made Some Basic Programes in My 12th standerd.
+        </li>
+        <li>
+          After that Me and My friend Ajay made a Our First Ui Based Application
+          and That Project Was Succesfull 😎. (I was only a advisery who gives
+          only advice the whole Project was Build by Ajay😅).
+        </li>
+        <li>
+          And yeah I also made Some Non-usable(I made for Fun) Android Apps.
+        </li>
+        <li>
+          And I used to do Some Practice on Competative programing 10 Questions
+          a Day and Till now I had done 344 Question on Codeforces in 34 Days😎.
+        </li>
+        <li>
+          Ohh! I Forgot Something. The site on Which You are reading this stuff
+          is also Developed and Programed By Me.
+        </li>
+      </ul>
+      <h1>More About Me</h1>
+      <p>These are That things which I haven't Mentioned Above</p>
+      <ul>
+        <li>
+          So First of All I am A student Who pursuing B.tech From Poornima
+          College Of Engineering and Right Now I am in 1st Year.
+        </li>
+        <li>And Completed My 12th and 10th From K.V. No. 2 Jaipur.</li>
+        <li>I am not Good at studies But I am trying My Best.</li>
+      </ul>
+      <h1>Thank You For Visiting My Small Portfolio</h1>
+    </div>
+    <div class="copyright-I">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/manashvee/"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Shinigami037"
+            ><i class="fa fa-github-alt"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/manashveeyadav/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+        <!-- <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
+      </ul>
+    </div>
+    <div class="copyright-C">
+      <p>© 2021 Manashvee @ Portfolio.</p>
+    </div>
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let text = document.getElementById("text");
+      let mountains_front = document.getElementById("mountains_front");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 1.05 + "px";
+        mountains_behind.style.top = value * 0.5 + "px";
+        text.style.marginRight = value * 2.7 + "px";
+        text.style.marginTop = value * 1 + "px";
+        mountains_front.style.top = value * 0 + "px";
+      });
+    </script>
+  </body>
+</html>

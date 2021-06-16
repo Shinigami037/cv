@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+  overflow-x: hidden;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section img#moon {
+  mix-blend-mode: screen;
+}
+section img#mountains_front {
+  z-index: 10;
+}
+#text {
+  /* font-family: "Cookie", cursive; */
+  position: absolute;
+  color: white;
+  white-space: nowrap;
+  right: -350px;
+  font-size: 7.5vw;
+  /* transform: translateY(-100px); */
+  /* font-size: 1.5em; */
+  z-index: 9;
+}
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  text-align: center;
+}
+.sec h1 {
+  font-family: "Cookie", cursive;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 7.5vw;
+}
+.sec p {
+  color: white;
+  font-size: 3.5vw;
+  margin-bottom: 10px;
+}
+.sec ul li {
+  color: white;
+  font-size: 3.5vw;
+}
+
+.copyright-C {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0 20px;
+  background: #1c0522;
+}
+
+.copyright-C p {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.copyright-I {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #1c0522;
+}
+.copyright-I ul {
+  position: relative;
+  display: flex;
+}
+
+.copyright-I ul li {
+  position: relative;
+  margin: 0 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.copyright-I ul li a {
+  text-decoration: none;
+}
+.copyright-I ul li a .fa {
+  font-size: 4em;
+  color: rgb(0, 0, 0);
+}
+.copyright-I ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 4em;
+  transition: 0.5s ease-in-out;
+}
+.copyright-I ul li:nth-child(1)::before {
+  content: "\f08c";
+  color: rgba(15, 158, 224, 0.972);
+  border-bottom: 3px solid aqua;
+}
+.copyright-I ul li:nth-child(2)::before {
+  content: "\f113";
+  color: white;
+  border-bottom: 3px solid white;
+}
+.copyright-I ul li:nth-child(3)::before {
+  content: "\f16d";
+  color: orange;
+  border-bottom: 3px solid rgb(243, 180, 62);
+}
+.copyright-I ul li:hover::before {
+  height: 100%;
+}
